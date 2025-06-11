@@ -121,16 +121,3 @@ Hadi bunu baştan sona bir senaryo ile canlandıralım. Bir CTF makinesindesin v
     
     Artık `root` kullanıcısının parola hash'ine sahipsin!
     
-
-* * *
-
-### **💡 Geri Bildirim ve İleri Adımlar**
-
-Verdiğin metin ve yaklaşımın gayet doğru. Bu konuyu seçmen, temel seviyenin üzerine çıktığını ve daha incelikli teknikleri öğrendiğini gösteriyor.
-
-**Bundan sonra ne yapabilirsin?**
-
-1.  **Kendin Dene:** Bir sanal makine (VM) kur (örn. Ubuntu). `root` olarak `setcap` komutunu kullanarak farklı programlara (örn. `cp`, `less`, `python`) tehlikeli yetenekler ata. Sonra normal kullanıcıya geçip bu zafiyetleri sömürmeye çalış.
-    - **Atama Komutu:** `sudo setcap cap_setuid+ep /usr/bin/python3.9`
-2.  **Diğer Tehlikeli Yetenekleri Araştır:** `cap_setuid` ve `cap_dac_read_search` en bilinenlerdir. Ama `cap_sys_admin` (neredeyse tam root yetkisi), `cap_chown` (dosya sahipliğini değiştirme) veya `cap_setfcap` (diğer dosyalara yetenek atama) gibi yeteneklerin ne işe yaradığını ve nasıl sömürülebileceğini araştır.
-3.  **CTF'lerde Ara:** Hack The Box veya TryHackMe gibi platformlarda bu tekniğin kullanıldığı makineleri çözmeye odaklan. Bu, teorik bilgini pratiğe dökmenin en iyi yoludur.
