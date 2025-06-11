@@ -273,4 +273,3 @@ Bu komut çalıştığında arka planda olanlar şunlardır:
 
 **Özetle:** `LD_PRELOAD` saldırı mekanizmasıdır, `env_keep` ise `sudo`'nun bu mekanizmayı engellemesini önleyen yapılandırma hatasıdır.
 
-Bu analoji ve adımlar konuyu netleştirdi mi? Anlamadığın başka bir nokta varsa çekinmeden sor lütfen.
